@@ -1,0 +1,746 @@
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: var(--color-text);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-btn);
+  }
+  
+  :root {
+    scrollbar-width: thin !important;
+    scrollbar-color: var(--color-text) var(--color-bg) !important;
+    --color-bg: #2c2822;
+    --color-btn: #dfae67;
+    --color-text: #a9a7a5;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.4em;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--color-bg);
+    overflow-x: hidden;
+    position: relative;
+  }
+.Navbar_nav__RmgD7 {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+  }
+  .Navbar_nav__RmgD7 .Navbar_logo__Obq6m {
+    font-family: "Architects Daughter", cursive;
+    font-size: 2.4rem;
+    color: var(--color-btn);
+    cursor: pointer;
+    transition: color ease 0.3s;
+  }
+  .Navbar_nav__RmgD7 .Navbar_logo__Obq6m:hover {
+    color: var(--color-text);
+  }
+  .Navbar_nav__RmgD7 .Navbar_menu__TQYZL {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    width: max-content;
+    background: #2c28224b;
+    margin-left: auto;
+    padding: 0rem 4rem;
+  }
+  @media screen and (max-width: 768px) {
+    .Navbar_nav__RmgD7 .Navbar_menu__TQYZL {
+      position: fixed;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      width: max-content;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      background: var(--color-btn);
+      transform: translateX(100%);
+      border-radius: 0;
+      padding: 0;
+      transition: transform 200ms ease-in-out;
+    }
+  }
+  .Navbar_nav__RmgD7 .Navbar_menu__TQYZL li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: color ease 0.3s;
+  }
+  .Navbar_nav__RmgD7 .Navbar_menu__TQYZL li:hover {
+    color: var(--color-btn);
+  }
+  @media screen and (max-width: 768px) {
+    .Navbar_nav__RmgD7 .Navbar_menu__TQYZL li {
+      padding: 0.5rem 2rem;
+    }
+    .Navbar_nav__RmgD7 .Navbar_menu__TQYZL li:first-child {
+      margin-top: 2rem;
+    }
+  }
+  .Navbar_nav__RmgD7 .Navbar_menu__TQYZL a {
+    color: white;
+  }
+  .Navbar_nav__RmgD7 .Navbar_menu__TQYZL a:hover {
+    color: var(--color-btn);
+  }
+  .Navbar_nav__RmgD7 .Navbar_mobileFaTimes__-30B4,
+  .Navbar_nav__RmgD7 .Navbar_mobileBars__cNH36 {
+    cursor: pointer;
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .Navbar_nav__RmgD7 .Navbar_mobileFaTimes__-30B4,
+  .Navbar_nav__RmgD7 .Navbar_mobileBars__cNH36 {
+      display: flex;
+      align-items: center;
+    }
+    .Navbar_nav__RmgD7 .Navbar_mobileFaTimes__-30B4 svg,
+  .Navbar_nav__RmgD7 .Navbar_mobileBars__cNH36 svg {
+      fill: whitesmoke;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .Navbar_nav__RmgD7 .Navbar_mobileBars__cNH36 {
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    padding: 1rem;
+    background: var(--color-btn);
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    .Navbar_nav__RmgD7 .Navbar_menuMobileActive__QQPzn {
+      transform: translateX(0);
+    }
+  }
+  .Home_home__U9Q7E {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1600px;
+  }
+  @media screen and (min-width: 1600px) {
+    .Home_home__U9Q7E {
+      margin: 0 auto;
+    }
+  }
+  .Home_home__U9Q7E .Home_nav__ZGb6T {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 2rem;
+    width: 100%;
+  }
+  .Home_home__U9Q7E .Home_bg1__rX5cb {
+    position: relative;
+    background: url("/Assets//bg1.jpg");
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .Home_home__U9Q7E .Home_bg1__rX5cb .Home_photoContainer__9wpXl {
+    position: absolute;
+    top: 0rem;
+    left: -23%;
+    width: 120%;
+    height: 95%;
+    overflow-y: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .Home_home__U9Q7E .Home_bg1__rX5cb .Home_photoContainer__9wpXl {
+      width: 750px;
+      height: 750px;
+      left: -20%;
+    }
+  }
+  .Home_home__U9Q7E .Home_bg1__rX5cb .Home_photoContainer__9wpXl img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 {
+    padding: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    max-width: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    .Home_home__U9Q7E .Home_slogan__kF8E7 {
+      max-width: 85vw;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Home_home__U9Q7E .Home_slogan__kF8E7 {
+      max-width: unset;
+    }
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 p {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+    max-width: 500px;
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 .Home_btn__Ut2MY {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    background: var(--color-btn);
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 .Home_btn__Ut2MY:hover {
+    background: black;
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 .Home_btn__Ut2MY:hover svg,
+  .Home_home__U9Q7E .Home_slogan__kF8E7 .Home_btn__Ut2MY:hover span {
+    color: var(--color-btn);
+    fill: var(--color-btn);
+  }
+  .Home_home__U9Q7E .Home_slogan__kF8E7 .Home_btn__Ut2MY svg {
+    font-size: 1.2rem;
+  }
+  .Specialities_container__DK0ua {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+  }
+  @media screen and (min-width: 1600px) {
+    .Specialities_container__DK0ua {
+      margin: 0 auto;
+    }
+  }
+  .Specialities_container__DK0ua .Specialities_title__1ie01 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+  }
+  .Specialities_container__DK0ua .Specialities_title__1ie01 h1 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 2.1rem;
+    color: var(--color-btn);
+    margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 440px) {
+    .Specialities_container__DK0ua .Specialities_title__1ie01 h1 {
+      font-size: max(6vw, 1.5rem);
+    }
+  }
+  .Specialities_container__DK0ua .Specialities_title__1ie01 h2 {
+    font-size: 2.8rem;
+    color: whitesmoke;
+  }
+  @media screen and (max-width: 550px) {
+    .Specialities_container__DK0ua .Specialities_title__1ie01 h2 {
+      font-size: max(8vw, 1.2rem);
+    }
+  }
+  .Specialities_container__DK0ua .Specialities_cards__ei-E\+ {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+  @media screen and (max-width: 860px) {
+    .Specialities_container__DK0ua .Specialities_cards__ei-E\+ {
+      gap: 0;
+      margin: 5rem 2rem;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    .Specialities_container__DK0ua .Specialities_cards__ei-E\+ {
+      flex-direction: column;
+    }
+  }
+  .Specialities_container__DK0ua .Specialities_cards__ei-E\+ .Specialities_row1__nY4up,
+  .Specialities_container__DK0ua .Specialities_cards__ei-E\+ .Specialities_row2__RORFB {
+    display: flex;
+    gap: 2rem;
+  }
+  @media screen and (max-width: 860px) {
+    .Specialities_container__DK0ua .Specialities_cards__ei-E\+ .Specialities_row1__nY4up,
+  .Specialities_container__DK0ua .Specialities_cards__ei-E\+ .Specialities_row2__RORFB {
+      flex-direction: column;
+    }
+  }
+  
+  .Specialities_cardContainer__8ctQU {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0.8rem;
+  }
+  .Specialities_cardContainer__8ctQU .Specialities_iconContainer__dIwO7 {
+    width: max-content;
+    line-height: 0;
+    border-radius: 50%;
+    background: rgba(175, 175, 175, 0.45);
+  }
+  .Specialities_cardContainer__8ctQU .Specialities_iconContainer__dIwO7 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+  }
+  .Specialities_cardContainer__8ctQU h2 {
+    margin-top: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+  }
+  .Specialities_cardContainer__8ctQU p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    color: var(--color-text);
+    max-width: 300px;
+  }
+  .AboutUs_container__ccepH {
+    position: relative;
+    max-width: 1600px;
+    display: grid;
+    grid-template-rows: 300px 200px 60px;
+    grid-template-columns: 15% 30% 55%;
+  }
+  @media screen and (min-width: 1600px) {
+    .AboutUs_container__ccepH {
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 756px) {
+    .AboutUs_container__ccepH {
+      grid-template-rows: 300px 200px 50px;
+    }
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt {
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 2/4;
+  }
+  @media screen and (max-width: 590px) {
+    .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt {
+      grid-column: 1/4;
+      margin-left: 1.5rem;
+    }
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt .AboutUs_aboutUs__id6IN {
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    background: #342c24;
+    padding: 2rem 1rem;
+  }
+  @media screen and (max-width: 1600px) {
+    .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt .AboutUs_aboutUs__id6IN {
+      right: 0;
+    }
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt .AboutUs_aboutUs__id6IN h2 {
+    color: var(--color-btn);
+    font-family: "Architects Daughter", cursive;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt .AboutUs_aboutUs__id6IN h3 {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .AboutUs_container__ccepH .AboutUs_restaurant__aLHYt .AboutUs_aboutUs__id6IN p {
+    font-size: 1.1rem;
+    max-width: 400px;
+    color: var(--color-text);
+  }
+  .AboutUs_container__ccepH .AboutUs_bg1__mfbWb {
+    grid-row: 2/4;
+    grid-column: 1/3;
+  }
+  @media screen and (max-width: 540px) {
+    .AboutUs_container__ccepH .AboutUs_bg1__mfbWb {
+      grid-column: 1/4;
+    }
+  }
+  .AboutUs_container__ccepH .AboutUs_bg1__mfbWb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.Facts_container__pGPBQ {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: url("/Assets//bgfood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 630px) {
+    .Facts_container__pGPBQ {
+      height: max-content;
+    }
+  }
+  .Facts_container__pGPBQ:after {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .Facts_container__pGPBQ .Facts_inner__dR4Pm {
+    max-width: 1600px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  @media screen and (min-width: 1600px) {
+    .Facts_container__pGPBQ .Facts_inner__dR4Pm {
+      margin: 0 auto;
+    }
+  }
+  .Facts_container__pGPBQ .Facts_inner__dR4Pm .Facts_facts__0FOKe {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 630px) {
+    .Facts_container__pGPBQ .Facts_inner__dR4Pm .Facts_facts__0FOKe {
+      flex-direction: column;
+      padding: 2rem 0;
+      gap: 2rem;
+    }
+  }
+  .Facts_container__pGPBQ .Facts_inner__dR4Pm .Facts_facts__0FOKe h2 {
+    color: var(--color-btn);
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .Facts_container__pGPBQ .Facts_inner__dR4Pm .Facts_facts__0FOKe h3 {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    font-weight: 400;
+  }
+ .Reservations_container__vzaym {
+    max-width: 1600px;
+  }
+  @media screen and (min-width: 1600px) {
+    .Reservations_container__vzaym {
+      margin: 0 auto;
+    }
+  }
+  
+  .Reservations_inner__nyfIK {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_inner__nyfIK {
+      display: flex;
+      flex-direction: column;
+      grid-template-rows: unset;
+      grid-template-columns: unset;
+      gap: 2rem;
+    }
+  }
+  
+  .Reservations_leftContainer__U1r23 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background: url("/Assets/bgfood.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Reservations_leftContainer__U1r23::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 {
+      width: 100%;
+      margin-right: 0;
+      margin: 2rem 0;
+      text-align: center;
+    }
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h1 {
+    text-align: center;
+    color: var(--color-btn);
+    font-family: "Architects Daughter", cursive;
+    margin-bottom: 1.2rem;
+    font-size: 5rem;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h2 a {
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h2 a:hover {
+    color: var(--color-btn);
+    font-size: 2.5rem;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h3 a {
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 .Reservations_title__nQ6bR h3 a:hover {
+    color: var(--color-btn);
+    font-size: 1.1rem;
+  }
+  .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 p {
+    font-size: 1rem;
+    max-width: 450px;
+    color: var(--color-text);
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_leftContainer__U1r23 .Reservations_description__gudr1 p {
+      max-width: unset;
+    }
+  }
+  
+  .Reservations_rightContainer__pjdi4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background: url("/Assets/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_rightContainer__pjdi4 {
+      background: none;
+    }
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ {
+    position: absolute;
+    bottom: 15%;
+    left: -10%;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ {
+      position: relative;
+      bottom: unset;
+      left: unset;
+    }
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_imgContainer__mLyFQ {
+    line-height: 0;
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_imgContainer__mLyFQ img {
+    max-width: 800px;
+    width: max(55vw, 360px);
+    height: 220px;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_imgContainer__mLyFQ img {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_formInner__Faef4 {
+    background: #342c24;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 700px) {
+    .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_formInner__Faef4 {
+      width: 100%;
+    }
+  }
+  .Reservations_rightContainer__pjdi4 .Reservations_formContainer__3dZyJ form .Reservations_formInner__Faef4 .Reservations_name__CAhcw {
+    width: 100%;
+  }
+ .Footer_container__sOt1b {
+    margin-top: 5rem;
+    background: #1d1710;
+    width: 100%;
+  }
+  
+  .Footer_nav__dTuTJ {
+    max-width: 1600px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1600px) {
+    .Footer_nav__dTuTJ {
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .Footer_nav__dTuTJ {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+  .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ {
+    display: flex;
+    align-items: center;
+  }
+  .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_logo__Foj3W {
+    font-family: "Architects Daughter", cursive;
+    font-size: 2.4rem;
+    color: var(--color-btn);
+    cursor: pointer;
+    transition: color ease 0.3s;
+  }
+  .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_logo__Foj3W:hover {
+    color: var(--color-text);
+  }
+  .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_copyright__edG\+U {
+    display: flex;
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-left: 3rem;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 540px) {
+    .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_copyright__edG\+U {
+      font-size: 0.8rem;
+      margin-left: 1rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_copyright__edG\+U {
+      white-space: unset;
+    }
+  }
+  .Footer_nav__dTuTJ .Footer_logoContainer__SAgyJ .Footer_copyright__edG\+U:before {
+    content: "";
+    background: rgba(128, 128, 128, 0.637);
+    width: 1px;
+    padding-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  .Footer_nav__dTuTJ ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 960px) {
+    .Footer_nav__dTuTJ ul {
+      justify-content: unset;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .Footer_nav__dTuTJ ul {
+      flex-direction: column;
+    }
+  }
+  .Footer_nav__dTuTJ ul li {
+    color: var(--color-text);
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 540px) {
+    .Footer_nav__dTuTJ ul li {
+      font-size: 0.8rem;
+    }
+  }
+  .Footer_nav__dTuTJ ul .Footer_socialsContainer__5XnM7 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 0.8rem;
+  }
+  @media screen and (max-width: 400px) {
+    .Footer_nav__dTuTJ ul .Footer_socialsContainer__5XnM7 {
+      flex-direction: column;
+    }
+  }
+  .Footer_nav__dTuTJ ul .Footer_socialsContainer__5XnM7 .Footer_socials__3GU2n {
+    display: flex;
+  }
+  .Footer_nav__dTuTJ ul .Footer_socialsContainer__5XnM7 .Footer_socials__3GU2n svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--color-btn);
+  }
+  @media screen and (max-width: 540px) {
+    .Footer_nav__dTuTJ ul .Footer_socialsContainer__5XnM7 .Footer_socials__3GU2n svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
