@@ -46,13 +46,17 @@
         <div class="Home_nav__ZGb6T">
            <nav class="Navbar_nav__RmgD7">
               <div><a href="/"><span class="Navbar_logo__Obq6m">Indian Garden</span></a></div>
+              <button  onclick="openNav()">
               <div class="Navbar_mobileBars__cNH36">
+
                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
                  </svg>
-              </div>
-              <ul class="undefined Navbar_menu__TQYZL">
-                 <li class="Navbar_mobileFaTimes__-30B4">
+                 
+               </div>
+            </button>
+              <ul class="undefined Navbar_menu__TQYZL" >
+                 <li class="Navbar_mobileFaTimes__-30B4 "  onclick="closeNav()">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
                     </svg>
@@ -209,5 +213,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   
+<script>
+   function openNav(){
+      document.querySelector('.Navbar_menu__TQYZL').classList.add('Navbar_menuMobileActive__QQPzn');
+   }
+   function closeNav(){
+      document.querySelector('.Navbar_menu__TQYZL').classList.remove('Navbar_menuMobileActive__QQPzn');
 
+   }
+</script>
 </body></html>
